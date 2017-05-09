@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu blog em Python</title>
+</head>
+<body>
+<div style="background-color: blue; font-size: 12; height: 80px">
+	<a href=" ">HOME</a>
+</div>
+{% for post in posts %}
+	<div style="">
+		<h1 style="color: white; background-color: gray; width: 400px">{{post.title}}</h1>
+		<div>
+			<h2>{{post.author.username}}</h2>	
+		</div>
+	</div>
+	
+	
+	<p>{{post.text}}</p>
+	<br>
+{% endfor %}
+
+</body>
+</html>>
